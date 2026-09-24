@@ -1,0 +1,23 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AssemblyName>AutoFrom</AssemblyName>
+    <RootNamespace>AutoFrom</RootNamespace>
+    <OutputPath>bin\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" /><Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" /><Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+    <Compile Include="src\Rules.cs" /><Compile Include="src\Controller.cs" />
+    <Compile Include="src\OutlookPort.cs" /><Compile Include="src\Connect.cs" />
+    <Compile Include="src\Ribbon.cs" /><Compile Include="src\SettingsStore.cs" /><Compile Include="src\SettingsForm.cs" />
+    <Compile Include="src\AliasIdentity.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

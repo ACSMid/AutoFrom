@@ -1,0 +1,13 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.pfx
+*.p12
+*.key
+*.bak
+*.tmp
+my-rules*.json
+rules.local*.json
+releases/

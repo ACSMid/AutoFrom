@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "enabled": true,
+  "senders": [
+    {
+      "id": "My usual alias",
+      "account": "alex@contoso.com",
+      "alias": "sales-alias@contoso.com",
+      "defaultForAccount": true
+    }
+  ],
+  "rules": []
+}

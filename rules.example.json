@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "enabled": true,
+  "senders": [
+    { "id": "personal", "account": "alex@contoso.com" },
+    { "id": "sales", "account": "alex@contoso.com", "represented": "sales@contoso.com" },
+    { "id": "second-account", "account": "alex@fabrikam.com" }
+  ],
+  "rules": [
+    {
+      "id": "special-contact",
+      "priority": 10,
+      "sender": "second-account",
+      "recipients": ["buyer@partner.example"]
+    },
+    {
+      "id": "customer-domain",
+      "priority": 20,
+      "sender": "sales",
+      "accounts": ["alex@contoso.com"],
+      "domains": ["customer.example"],
+      "includeSubdomains": false
+    },
+    {
+      "id": "account-fallback",
+      "priority": 1000,
+      "sender": "personal",
+      "accounts": ["alex@contoso.com"]
+    }
+  ]
+}
