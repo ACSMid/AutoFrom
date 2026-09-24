@@ -1,5 +1,12 @@
 # AutoFrom for classic Outlook on Windows
 
+
+----
+If you use an alias to send email from Outlook, you know you have to click the FROM dropdown and select your alias email every time. This plugin will automatically select it for you when you create a new email.
+The entire thing was built by ChatGPT Codex. It's been working well for me, but I can't say the same for anyone else. I wanted to share this with others because the only other options I could find were paid options. Enjoy!
+----
+
+
 AutoFrom automatically selects the outgoing sender using a per-account default or recipient/domain/account rules. It supports account and delegated-mailbox routes, with an **alias-aware pilot implementation (current version: 1.2.6)**. You still press Outlook's normal Send button.
 
 **Platform limit:** this project requires classic Outlook for Windows. Microsoft's current Office.js `From` interface has a getter and no setter, and new Outlook does not load COM add-ins. It therefore cannot change the native compose From field in new Outlook or Outlook on the web. See [API findings and sources](docs/API-AND-PERMISSIONS.md).
